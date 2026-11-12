@@ -166,6 +166,28 @@
 }
 
 @media (max-width: 768px) {
+  .page-hero.reveal-on-scroll,
+  .toolbar-wrap.reveal-on-scroll,
+  .category-section.reveal-on-scroll,
+  .catalog-section.reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+
+  .catalog-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .filters-panel {
+    display: block;
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .container {
     width: calc(100% - 32px);
   }
