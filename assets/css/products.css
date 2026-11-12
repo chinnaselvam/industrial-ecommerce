@@ -1207,10 +1207,6 @@ button {
 }
 
 @media (max-width: 768px) {
-  .main-nav {
-    display: none;
-  }
-
   .mobile-menu-btn {
     display: block;
   }
