@@ -560,7 +560,7 @@
   }
 
   .catalog-grid .product-media img {
-    height: 150px;
+    height: auto;
   }
 }
 
@@ -577,6 +577,6 @@
   }
 
   .catalog-grid .product-media img {
-    height: 190px;
+    height: auto;
   }
 }
