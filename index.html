@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Stackly offers premium industrial tools, machinery, safety equipment, and workshop essentials for businesses across India." />
+    <title>Stackly | Industrial Tools & Machinery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="links">
+          <span><i class="fa-solid fa-truck-fast"></i>Free shipping on orders above ₹5,000</span>
+        </div>
+        <div class="links">
+          <span><i class="fa-solid fa-phone"></i>+91 98765 43210</span>
+          <span><i class="fa-solid fa-envelope"></i>sales@stackly.in</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Stackly">
+          <img src="assets/images/logo/logo-stackly.png" alt="Stackly" class="logo-img" />
+        </a>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="main-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li>
+            <a href="categories.html">Categories <i class="fa-solid fa-angle-down"></i></a>
+            <div class="mega-menu">
+              <div class="mega-item">
+                <span class="name">Power Tools</span>
+                <ul>
+                  <li><a href="products.html?category=Power Tools">Drills</a></li>
+                  <li><a href="products.html?category=Power Tools">Grinders</a></li>
+                  <li><a href="products.html?category=Power Tools">Saws</a></li>
+                </ul>
+              </div>
+              <div class="mega-item">
+                <span class="name">Hand Tools</span>
+                <ul>
+                  <li><a href="products.html?category=Hand Tools">Wrenches</a></li>
+                  <li><a href="products.html?category=Hand Tools">Socket Sets</a></li>
+                  <li><a href="products.html?category=Hand Tools">Pliers</a></li>
+                </ul>
+              </div>
+              <div class="mega-item">
+                <span class="name">Safety</span>
+                <ul>
+                  <li><a href="products.html?category=Safety">Helmets</a></li>
+                  <li><a href="products.html?category=Safety">Gloves</a></li>
+                  <li><a href="products.html?category=Safety">Protective Gear</a></li>
+                </ul>
+              </div>
+              <div class="mega-item">
+                <span class="name">Machinery</span>
+                <ul>
+                  <li><a href="products.html?category=Machinery">Lifts</a></li>
+                  <li><a href="products.html?category=Machinery">Compressors</a></li>
+                  <li><a href="products.html?category=Machinery">Welders</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-tools">
+          <form class="search-box" action="products.html" method="get">
+            <input type="search" name="search" placeholder="Search tools..." aria-label="Search tools" />
+            <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <a href="login.html" class="nav-icon" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+          <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge" data-wishlist-count>0</span>
+          </a>
+          <a href="cart.html" class="nav-icon" aria-label="Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge" data-cart-count>0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-slider" aria-label="Featured industrial offers">
+          <article class="hero-slide is-active" aria-hidden="false">
+            <div class="container hero-slide-inner">
+              <div class="hero-content">
+                <span class="eyebrow">Trusted Since 2010</span>
+                <h1>ENGINEERED FOR PERFORMANCE. BUILT FOR INDUSTRY.</h1>
+                <p>Premium power tools, machine accessories, workshop essentials, and safety systems for factories, contractors, and industrial teams that demand reliable performance.</p>
+                <div class="hero-actions">
+                  <a href="products.html" class="btn btn-primary">Shop Now</a>
+                  <a href="categories.html" class="btn btn-outline">Explore Categories</a>
+                </div>
+                <div class="hero-trust">
+                  <span class="trust-pill"><i class="fa-solid fa-shield-halved"></i> ISO Certified</span>
+                  <span class="trust-pill"><i class="fa-solid fa-box-open"></i> Bulk Supply</span>
+                  <span class="trust-pill"><i class="fa-solid fa-headset"></i> Expert Support</span>
+                </div>
+              </div>
+              <div class="hero-visual">
+                <div class="hero-card">
+                  <img src="assets/images/banner-1.jpg" alt="Industrial Tools" />
+                  <div class="hero-mini">
+                    <div>
+                      <span class="badge">Industrial Grade</span>
+                    </div>
+                    <strong>4.9/5 customer rating</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-slide" aria-hidden="true">
+            <div class="container hero-slide-inner">
+              <div class="hero-content">
+                <span class="eyebrow">Smart Workshop Upgrades</span>
+                <h1>POWER UP YOUR WORKFLOW WITH PRO-LEVEL GEAR.</h1>
+                <p>Upgrade your shop with precision tools, heavy-duty accessories, and efficient systems that keep every task faster, safer, and more reliable.</p>
+                <div class="hero-actions">
+                  <a href="products.html" class="btn btn-primary">View Deals</a>
+                  <a href="products.html?category=Power Tools" class="btn btn-outline">Power Tools</a>
+                </div>
+                <div class="hero-trust">
+                  <span class="trust-pill"><i class="fa-solid fa-bolt"></i> Fast Operations</span>
+                  <span class="trust-pill"><i class="fa-solid fa-wrench"></i> Precision Built</span>
+                  <span class="trust-pill"><i class="fa-solid fa-people-carry-box"></i> Trusted by Teams</span>
+                </div>
+              </div>
+              <div class="hero-visual">
+                <div class="hero-card">
+                  <img src="assets/images/banner-2.jpg" alt="Power Tools" />
+                  <div class="hero-mini">
+                    <div>
+                      <span class="badge">New Arrivals</span>
+                    </div>
+                    <strong>Save up to 30% this month</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-slide" aria-hidden="true">
+            <div class="container hero-slide-inner">
+              <div class="hero-content">
+                <span class="eyebrow">Built for Real Work</span>
+                <h1>RELIABLE SUPPLY. RIGOROUS QUALITY. EVERY ORDER.</h1>
+                <p>From fabrication shops to field teams, we deliver industrial-grade essentials with dependable inventory, quick dispatch, and expert support.</p>
+                <div class="hero-actions">
+                  <a href="categories.html" class="btn btn-primary">Browse Categories</a>
+                  <a href="contact.html" class="btn btn-outline">Talk to Sales</a>
+                </div>
+                <div class="hero-trust">
+                  <span class="trust-pill"><i class="fa-solid fa-truck-fast"></i> Quick Dispatch</span>
+                  <span class="trust-pill"><i class="fa-solid fa-certificate"></i> Quality Assured</span>
+                  <span class="trust-pill"><i class="fa-solid fa-headset"></i> Dedicated Help</span>
+                </div>
+              </div>
+              <div class="hero-visual">
+                <div class="hero-card">
+                  <img src="assets/images/banner-3.jpg" alt="Industrial machinery and tools" />
+                  <div class="hero-mini">
+                    <div>
+                      <span class="badge">Bulk Orders</span>
+                    </div>
+                    <strong>Flexible pricing for growing teams</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="container hero-slider-controls">
+          <button class="hero-slider-btn hero-prev" type="button" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="hero-dots" aria-label="Banner slide navigation">
+            <button class="hero-dot is-active" type="button" aria-label="Go to slide 1" aria-pressed="true"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 2" aria-pressed="false"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 3" aria-pressed="false"></button>
+          </div>
+          <button class="hero-slider-btn hero-next" type="button" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="stats-strip">
+        <div class="container stats-grid">
+          <div class="stat-box">
+            <div class="stat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="stat-copy">
+              <strong>Free Shipping &amp; Easy Returns</strong>
+              <span>Fast delivery. Easy returns.</span>
+            </div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div class="stat-copy">
+              <strong>Trusted by Professionals</strong>
+              <span>Built to perform.</span>
+            </div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon"><i class="fa-solid fa-truck-moving"></i></div>
+            <div class="stat-copy">
+              <strong>High-Efficiency Logistics</strong>
+              <span>Efficient. Trackable. Reliable.</span>
+            </div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon"><i class="fa-solid fa-percent"></i></div>
+            <div class="stat-copy">
+              <strong>5% Off First Order</strong>
+              <span>Use code WELCOME5 at checkout.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-offers-section" aria-label="Featured tool offers">
+        <div class="container">
+          <div class="home-offers-grid">
+            <article class="home-offer-card offer-one">
+              <img src="assets/images/homeoff-1.jpg" alt="BLADE KIT WITH CHAINSAW" />
+              <div class="home-offer-content">
+                <h3>BLADE KIT WITH CHAINSAW</h3>
+                <p>Buy any saw and receive a bonus cutting accessory pack.</p>
+                <a class="home-offer-button" href="products.html?category=Power%20Tools">SHOW NOW</a>
+              </div>
+            </article>
+            <article class="home-offer-card offer-two">
+              <img src="assets/images/homeoff-2.jpg" alt="FUEL™ SELF-PROPELLED DUAL BATTERY MOWER" />
+              <div class="home-offer-content">
+                <h3>FUEL™ SELF-PROPELLED DUAL BATTERY MOWER</h3>
+                <p>Buy any mower from our pro range.</p>
+                <a class="home-offer-button" href="products.html?category=Machinery">SHOW NOW</a>
+              </div>
+            </article>
+            <article class="home-offer-card offer-three">
+              <img src="assets/images/homeoff-3.jpg" alt="FREE BOSAC BATTERY LINEUP" />
+              <div class="home-offer-content">
+                <h3>FREE BOSAC BATTERY LINEUP</h3>
+                <p>When you purchase any power tool combo kit!</p>
+                <a class="home-offer-button" href="products.html?category=Power%20Tools">SHOW NOW</a>
+              </div>
+            </article>
+            <article class="home-offer-card offer-four">
+              <img src="assets/images/homeoff-4.jpg" alt="POWER TOOL COMBO KIT WITH SOFT CASE" />
+              <div class="home-offer-content">
+                <h3>POWER TOOL COMBO KIT WITH SOFT CASE</h3>
+                <p>FREE 18V XR driver when you purchase select outdoor kits.</p>
+                <a class="home-offer-button" href="products.html?category=Power%20Tools">SHOW NOW</a>
+              </div>
+            </article>
+            <article class="home-offer-card offer-five">
+              <img src="assets/images/homeoff-5.jpg" alt="CORDLESS DRILL" />
+              <div class="home-offer-content">
+                <h3>CORDLESS DRILL</h3>
+                <p>With the purchase of any circular saw or chainsaw kit.</p>
+                <a class="home-offer-button" href="products.html?category=Power%20Tools">SHOW NOW</a>
+              </div>
+            </article>
+            <article class="home-offer-card offer-six">
+              <img src="assets/images/homeoff-6.jpg" alt="CORDLESS GRINDER" />
+              <div class="home-offer-content">
+                <h3>CORDLESS GRINDER</h3>
+                <p>Available with selected 18V tool bundles and pro kits.</p>
+                <a class="home-offer-button" href="products.html?category=Power%20Tools">SHOW NOW</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section promo-deals section-muted">
+        <div class="container">
+          <div class="section-header centered-header">
+            <div class="eyebrow">Top Deals</div>
+            <h2>Built for faster work and smarter savings</h2>
+          </div>
+          <div class="promo-deals-grid">
+            <article class="deal-card deal-blue">
+              <div class="deal-inner">
+                <div class="deal-copy">
+                  <div class="eyebrow">Save $20</div>
+                  <h3>Save $20 on select electric saws.</h3>
+                  <p>Precision-cutting tools for smooth workshop performance.</p>
+                </div>
+                <a href="products.html" class="btn">Shop Now</a>
+              </div>
+            </article>
+            <article class="deal-card deal-teal">
+              <div class="deal-inner">
+                <div class="deal-copy">
+                  <div class="eyebrow">Free Blade Kit</div>
+                  <h3>Free blade kit with multi-tools.</h3>
+                  <p>Heavy-duty accessories for faster, cleaner, more accurate work.</p>
+                </div>
+                <a href="products.html" class="btn">Shop Now</a>
+              </div>
+            </article>
+            <article class="deal-card deal-red">
+              <div class="deal-inner">
+                <div class="deal-copy">
+                  <div class="eyebrow">Free Storage</div>
+                  <h3>Free storage when you buy a circular saw.</h3>
+                  <p>Protect your tools with smarter, easier organizing options.</p>
+                </div>
+                <a href="products.html" class="btn">Shop Now</a>
+              </div>
+            </article>
+            <article class="deal-card deal-orange">
+              <div class="deal-inner">
+                <div class="deal-copy">
+                  <div class="eyebrow">Up to 30% Off</div>
+                  <h3>Up to 30% off on selected saw brands.</h3>
+                  <p>Premium blades and hardware for demanding site conditions.</p>
+                </div>
+                <a href="products.html" class="btn">Shop Now</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-section category-section-home">
+        <div class="space-container">
+          <div class="section-header-inline">
+            <div class="section-header">
+              <div class="eyebrow">Categories</div>
+              <h2>Shop by Categories</h2>
+            </div>
+            <a href="products.html" class="view-all-btn">View All</a>
+          </div>
+
+          <div class="category-slider-wrapper" style="margin-top: 30px;">
+            <div class="category-grid" id="categoriesGrid" aria-label="Shop by categories"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">Featured</div>
+            <h2>Featured Products</h2>
+          </div>
+          <div class="product-grid" id="featuredProductsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="promo-banner">
+            <div class="eyebrow">Limited-Time Deal</div>
+            <h3>UPGRADE YOUR WORKSHOP WITH PROFESSIONAL TOOLS.</h3>
+            <p>Save on high-performance machine accessories, power tools, and workshop essentials built for long-term productivity.</p>
+            <a href="products.html" class="btn btn-primary">Shop Collection</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">Top Sellers</div>
+            <h2>Best Selling Products</h2>
+          </div>
+          <div class="product-grid" id="bestSellingGrid"></div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">Why Stackly</div>
+            <h2>Why Choose Us?</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+              <h3>Genuine Industrial Products</h3>
+              <p>Every product is sourced from trusted OEMs and authorized distributors.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-tag"></i></div>
+              <h3>Competitive Wholesale Pricing</h3>
+              <p>Volume pricing and procurement support designed for project-based buying.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-truck"></i></div>
+              <h3>Fast & Secure Delivery</h3>
+              <p>Timely dispatch, real-time tracking, and secure packaging for all orders.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+              <h3>Expert Technical Support</h3>
+              <p>Our specialists guide you with application-based product recommendations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted shop-brands-section">
+        <div class="container">
+          <div class="shop-brands-header">
+            <div class="section-header shop-brands-title">
+              <div class="eyebrow">Brands</div>
+              <h2>Shop by Brand</h2>
+            </div>
+            <a href="products.html" class="view-all-btn">View All</a>
+          </div>
+
+          <div class="brand-scroll-row">
+            <div class="shop-brand-grid">
+              <a class="shop-brand-card" href="products.html" aria-label="Shop featured brand 1">
+                <img src="assets/images/brand-1.png" alt="Featured industrial tool brand." loading="lazy" />
+              </a>
+              <a class="shop-brand-card" href="products.html" aria-label="Shop featured brand 2">
+                <img src="assets/images/brand-2.png" alt="Featured industrial tool brand." loading="lazy" />
+              </a>
+              <a class="shop-brand-card" href="products.html" aria-label="Shop featured brand 3">
+                <img src="assets/images/brand-3.png" alt="Featured industrial tool brand." loading="lazy" />
+              </a>
+              <a class="shop-brand-card" href="products.html" aria-label="Shop featured brand 4">
+                <img src="assets/images/brand-4.png" alt="Featured industrial tool brand." loading="lazy" />
+              </a>
+              <a class="shop-brand-card" href="products.html" aria-label="Shop featured brand 5">
+                <img src="assets/images/brand-5.png" alt="Featured industrial tool brand." loading="lazy" />
+              </a>
+              <a class="shop-brand-card" href="products.html" aria-label="Shop featured brand 6">
+                <img src="assets/images/brand-6.png" alt="Featured industrial tool brand." loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">Industries</div>
+            <h2>Industrial Solutions</h2>
+          </div>
+          <div class="solution-grid">
+            <article class="solution-card">
+              <img src="assets/images/indus-img1.jpg" alt="Manufacturing industries" />
+              <div class="content">
+                <h3>Manufacturing Industries</h3>
+                <p>Precision tools for continuous production and plant maintenance.</p>
+                <a href="contact.html" class="btn btn-dark">Enquire Now</a>
+              </div>
+            </article>
+            <article class="solution-card">
+              <img src="assets/images/indus-img2.jpg" alt="Construction companies" />
+              <div class="content">
+                <h3>Construction Companies</h3>
+                <p>Robust equipment for site efficiency, safety, and material handling.</p>
+                <a href="contact.html" class="btn btn-dark">Enquire Now</a>
+              </div>
+            </article>
+            <article class="solution-card">
+              <img src="assets/images/indus-img3.jpg" alt="Automotive workshops" />
+              <div class="content">
+                <h3>Automotive Workshops</h3>
+                <p>Engineered tools for maintenance, diagnostics, and repair operations.</p>
+                <a href="contact.html" class="btn btn-dark">Enquire Now</a>
+              </div>
+            </article>
+            <article class="solution-card">
+              <img src="assets/images/indus-img4.jpg" alt="Electrical contractors" />
+              <div class="content">
+                <h3>Electrical Contractors</h3>
+                <p>Testing and installation kits for safe, efficient electrical work.</p>
+                <a href="contact.html" class="btn btn-dark">Enquire Now</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="eyebrow">Reviews</div>
+            <h2>Customer Testimonials</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="person">
+                <img src="assets/images/test-1.jpg" alt="Rahul Sharma" />
+                <div>
+                  <h4>Rahul Sharma</h4>
+                  <small>Operations Lead, Kinetic Fabrication</small>
+                </div>
+              </div>
+              <div class="rating-row"><span>★★★★★</span></div>
+              <p>"Stackly delivered premium gear and timely support for our plant upgrade. The product quality and service consistency are excellent."</p>
+            </article>
+            <article class="testimonial-card">
+              <div class="person">
+                <img src="assets/images/test-2.jpg" alt="Priya Nair" />
+                <div>
+                  <h4>Priya Nair</h4>
+                  <small>Procurement Manager, GridWorks Infra</small>
+                </div>
+              </div>
+              <div class="rating-row"><span>★★★★★</span></div>
+              <p>"Their safety equipment and technical guidance were exactly what our project required. Procurement was smooth and fast."</p>
+            </article>
+            <article class="testimonial-card">
+              <div class="person">
+                <img src="assets/images/test-3.jpg" alt="Arjun Mehta" />
+                <div>
+                  <h4>Arjun Mehta</h4>
+                  <small>Owner, Bharat Auto Services</small>
+                </div>
+              </div>
+              <div class="rating-row"><span>★★★★★</span></div>
+              <p>"The workflow equipment and tools we ordered transformed our shop operations. Highly recommended for workshop and service businesses."</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="newsletter">
+            <div>
+              <div class="eyebrow" style="color: #ffb189;">Newsletter</div>
+              <h3>STAY UPDATED WITH STACKLY.</h3>
+              <p>Get updates on new product launches, seasonal offers, and industrial insights.</p>
+            </div>
+            <form class="newsletter-form" action="#" method="post">
+              <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="index.html" class="logo" aria-label="Stackly">
+              <img src="assets/images/logo/logo-stackly.png" alt="Stackly" class="logo-img" />
+            </a>
+            <p class="mt-3">Industrial tools, machinery, and safety solutions for modern businesses, workshops, and project sites across India.</p>
+            <div class="socials">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="login.html">My Account</a></li>
+              <li><a href="cart.html">Shopping Cart</a></li>
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Information</h4>
+            <ul>
+              <li>Plot 18, Industrial Estate, Andheri East, Mumbai, Maharashtra 400069</li>
+              <li>+91 98765 43210</li>
+              <li>sales@stackly.in</li>
+              <li>Mon - Sat: 9:00 AM - 7:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2026 Stackly. All Rights Reserved.</div>
+          <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+          <div class="payments">
+            <span class="payment-chip">Visa</span>
+            <span class="payment-chip">Mastercard</span>
+            <span class="payment-chip">UPI</span>
+            <span class="payment-chip">PayPal</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="toast-container"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/wishlist.js"></script>
+  </body>
+</html>

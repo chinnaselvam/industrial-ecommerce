@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop industrial tools, safety equipment, power tools, and workshop essentials from Stackly." />
+    <title>Shop Industrial Tools | Stackly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-links">
+          <span><i class="fa-solid fa-truck-fast"></i> Free shipping above ₹5,000</span>
+        </div>
+        <div class="topbar-links">
+          <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+          <span><i class="fa-solid fa-envelope"></i> sales@stackly.in</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Stackly">
+          <img src="assets/images/logo/logo-stackly.png" alt="Stackly" class="logo-img" />
+        </a>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="categories.html">Categories</a>
+          <a class="active" href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-tools">
+          <a href="login.html" class="nav-icon" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+          <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge" data-wishlist-count>0</span>
+          </a>
+          <a href="cart.html" class="nav-icon" aria-label="Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge" data-cart-count>0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div class="container hero-inner">
+          <div>
+            <div class="breadcrumb">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <span>Products</span>
+            </div>
+            <h1>Shop Industrial Tools</h1>
+            <p>Explore our premium collection of professional industrial tools and equipment.</p>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-card">
+              <span class="meta-label">Total Products</span>
+              <strong id="totalProducts">0</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar-wrap">
+        <div class="container">
+          <div class="toolbar-row">
+            <label class="search-field" aria-label="Search products">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="searchInput" type="search" placeholder="Search products, brands, or categories" />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <div class="container">
+          <div class="category-strip" id="categoryNav" aria-label="Category navigation"></div>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="container catalog-layout">
+          <aside class="filters-panel">
+            <div class="filter-header-row">
+              <h3>Filters</h3>
+              <button type="button" class="clear-btn" id="clearFiltersBtn">Clear All</button>
+            </div>
+
+            <div class="filter-block">
+              <h4>Category</h4>
+              <label class="check-item"><input type="checkbox" data-sidebar-category value="Power Tools" /> Power Tools</label>
+              <label class="check-item"><input type="checkbox" data-sidebar-category value="Hand Tools" /> Hand Tools</label>
+              <label class="check-item"><input type="checkbox" data-sidebar-category value="Safety Equipment" /> Safety Equipment</label>
+              <label class="check-item"><input type="checkbox" data-sidebar-category value="Industrial Machinery" /> Machinery</label>
+            </div>
+
+            <div class="filter-block">
+              <h4>Brand</h4>
+              <label class="check-item"><input type="checkbox" data-brand value="Bosch" /> Bosch</label>
+              <label class="check-item"><input type="checkbox" data-brand value="Makita" /> Makita</label>
+              <label class="check-item"><input type="checkbox" data-brand value="DeWalt" /> DeWalt</label>
+              <label class="check-item"><input type="checkbox" data-brand value="Stanley" /> Stanley</label>
+              <label class="check-item"><input type="checkbox" data-brand value="3M" /> 3M</label>
+              <label class="check-item"><input type="checkbox" data-brand value="SKF" /> SKF</label>
+              <label class="check-item"><input type="checkbox" data-brand value="Knipex" /> Knipex</label>
+              <label class="check-item"><input type="checkbox" data-brand value="Honeywell" /> Honeywell</label>
+            </div>
+
+            <div class="filter-block">
+              <h4>Price Range</h4>
+              <label class="radio-item"><input type="radio" name="priceRange" value="0-1000" /> ₹0 – ₹1,000</label>
+              <label class="radio-item"><input type="radio" name="priceRange" value="1000-5000" /> ₹1,000 – ₹5,000</label>
+              <label class="radio-item"><input type="radio" name="priceRange" value="5000-10000" /> ₹5,000 – ₹10,000</label>
+              <label class="radio-item"><input type="radio" name="priceRange" value="10000-25000" /> ₹10,000 – ₹25,000</label>
+              <label class="radio-item"><input type="radio" name="priceRange" value="25000+" /> ₹25,000+</label>
+            </div>
+
+            <div class="filter-block">
+              <h4>Customer Rating</h4>
+              <label class="radio-item"><input type="radio" name="ratingFilter" value="5" /> 5 Stars</label>
+              <label class="radio-item"><input type="radio" name="ratingFilter" value="4" /> 4 Stars &amp; Above</label>
+              <label class="radio-item"><input type="radio" name="ratingFilter" value="3" /> 3 Stars &amp; Above</label>
+            </div>
+
+            <div class="filter-block">
+              <h4>Availability</h4>
+              <label class="radio-item"><input type="radio" name="availabilityFilter" value="all" checked /> All Items</label>
+              <label class="radio-item"><input type="radio" name="availabilityFilter" value="in-stock" /> In Stock</label>
+              <label class="radio-item"><input type="radio" name="availabilityFilter" value="out-of-stock" /> Out of Stock</label>
+            </div>
+          </aside>
+
+          <div class="catalog-panel">
+            <div class="catalog-toolbar">
+              <div>
+                <h2>All Products</h2>
+                <span id="resultsStatus">0 products</span>
+              </div>
+
+              <div class="toolbar-actions">
+                <div class="view-switch" aria-label="Product view toggles">
+                  <button type="button" class="view-btn active" data-view="grid" aria-label="Grid view"><i class="fa-solid fa-grip"></i></button>
+                  <button type="button" class="view-btn" data-view="list" aria-label="List view"><i class="fa-solid fa-list"></i></button>
+                </div>
+
+                <label class="select-wrap">
+                  <span>Sort by</span>
+                  <select id="sortSelect">
+                    <option value="featured">Featured Products</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="latest">Latest Arrivals</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Customer Rating</option>
+                    <option value="discount">Biggest Discount</option>
+                  </select>
+                </label>
+
+                <label class="select-wrap small">
+                  <span>Items</span>
+                  <select id="perPageSelect">
+                    <option value="8">8</option>
+                    <option value="12" selected>12</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                    <option value="24">24</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="catalog-grid" id="productGrid"></div>
+
+            <div class="pagination" aria-label="Pagination">
+              <button type="button" class="page-btn" id="prevPageBtn">Previous</button>
+              <div class="page-numbers" id="pageNumbers"></div>
+              <button type="button" class="page-btn" id="nextPageBtn">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="modal-backdrop" id="quickViewModal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="quickViewTitle">
+        <button type="button" class="modal-close" id="closeModalBtn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-content" id="quickViewContent"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+  </body>
+</html>
